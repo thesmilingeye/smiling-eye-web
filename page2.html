@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Gallery</title>
+        <link href="style2.css" type="text/css"
+    rel="stylesheet">
+    </head>
+    <body>        
+            
+
+            <div id=slide_container div class="container">
+            </div>
+
+            <!--Button List-->
+            <div id="click1" class="click1">
+                <button type="button" onclick="location.href='home.html';">Home</button>
+            </div>
+
+            <div class="shop">
+                <button type="button" a href="#" onclick='window.open("http://www.etsy.co.uk");return false;'>Shop</button>
+            </div>
+
+                <!--Gallery Slideshow-->
+                <div id="slides" class="bg-slides">
+                    <script>
+                        var i = 0;
+                        var images = [];
+                        var time = 3000;
+                        // Image list
+                        images[0] = '01.jpg';
+                        images[1] = '02.jpg';
+                        images[2] = '03.jpg';
+                        images[3] = '04.jpg';
+                        images[4] = '05.jpg';
+                        images[5] = '06.jpg';
+                        images[6] = '07.jpg';
+                        images[7] = '08.jpg';
+                        
+                            function changeImg(){
+                            document.slide.src = images[i];
+                        
+                            if(i < images.length -1){
+                                i++;
+                            } else {
+                                i = 0;
+                            }
+                            setTimeout("changeImg()", time);
+                            }
+                        window.onload = changeImg;
+                    </script>
+                </div>
+    
+                <!--Ticker-->
+                <div class="news-container">
+                    
+                    <div class="news-slide">
+                        <ul>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            
+                            <li>
+                                Remember to smile!
+                            </li>
+                
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                        
+                        </ul>
+                    </div>
+                
+                    <div class="news-slide">
+                        <ul>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            
+                            <li>
+                                Remember to smile!
+                            </li>
+                
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                            <li>
+                                Remember to smile!
+                            </li>
+                        
+                        </ul>
+                    </div>
+                
+                
+                </div>
+    
+    
+    
+                
+        <img name="slide">
+    </body>
+</html>

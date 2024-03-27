@@ -1,0 +1,149 @@
+
+body{
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  background-color: black;
+  background-image: url('01bg2.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+  img {
+    border: 5px solid #ffffff;
+    margin: 0;
+    max-width: 60%;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+
+
+#click1 button{
+  z-index: 1;
+    background: none;
+    border: none;
+    color: rgb(189, 0, 0);
+    font-weight: 700;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px #ffffff; 
+    padding: none;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    
+    transform: translate(-50%, -50%);
+    cursor: pointer;    
+}
+
+.shop button{
+  z-index: 1;
+    background: none;
+    border: none;
+    color: rgb(189, 0, 0);
+    font-weight: 700;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px #ffffff; 
+    padding: none;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    
+    transform: translate(-50%, -50%);
+    cursor: pointer;  
+}
+
+.shop button{
+  font-family: myFirstFont;
+}
+
+.shop button:hover{
+  background: none;
+  color: red;
+}
+#click1 button{
+    font-family: myFirstFont;
+}
+#click1 button:hover{
+    background: none;
+    color: red;
+}
+@font-face {
+  font-family: myFirstFont;
+  src:url("spaceranger.ttf");
+}
+
+/* ticker animation */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.news-container {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: eightBit;
+  font-size: 36px;
+}
+
+@font-face {
+  font-family: eightBit;
+  src: url("Litebulb\ 8-bit.ttf");
+}
+
+.news-slide {
+  display: inline-block;
+  position: relative;
+}
+
+.news-slide ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  animation: scroll 20s infinite linear;
+  display: flex; /* Display list items horizontally */
+}
+
+.news-slide ul li {
+  padding: 10px 24px;
+  color: #ffffff;
+}
+
+.news-container ul li::after {
+  content:"";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.news-container ul li:last-child::after {
+  display: none;
+}
